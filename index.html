@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="meuFormulario">
+    
+        <label>Nome completo:</label><br>
+        <input type="text" id="nome" placeholder="Digite seu nome" required><br><br>
+    
+        <label>E-mail:</label><br>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required><br><br>
+    
+        <label>Telefone:</label><br>
+        <input type="tel" id="telefone" placeholder="Digite seu telefone" required><br><br>
+    
+        <label>Idade:</label><br>
+        <input type="number" id="idade" placeholder="Digite sua idade" required><br><br>
+    
+        <label>Data de nascimento:</label><br>
+        <input type="date" id="data" required><br><br>
+    
+        <label>Escolha um curso:</label><br>
+        <select id="curso" required>
+            <option value="">Selecione</option>
+            <option value="Informática">Informática</option>
+            <option value="Administração">Administração</option>
+            <option value="Enfermagem">Enfermagem</option>
+        </select><br><br>
+    
+        <label>Aceito os termos:</label>
+        <input type="checkbox" id="termos" required><br><br>
+    
+        <button type="submit">Enviar</button>
+    
+    </form>
+    
+    <script>
+        document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            let nome = document.getElementById("nome").value;
+            let email = document.getElementById("email").value;
+            let telefone = document.getElementById("telefone").value;
+            let idade = document.getElementById("idade").value;
+            let data = document.getElementById("data").value;
+            let curso = document.getElementById("curso").value;
+            let termos = document.getElementById("termos").checked ? "Sim" : "Não";
+    
+            alert(
+                "Nome: " + nome + "\n" +
+                "Email: " + email + "\n" +
+                "Telefone: " + telefone + "\n" +
+                "Idade: " + idade + "\n" +
+                "Data de nascimento: " + data + "\n" +
+                "Curso: " + curso + "\n" +
+                "Aceitou termos: " + termos
+            );
+        });
+    </script>
+</body>
+</html>
