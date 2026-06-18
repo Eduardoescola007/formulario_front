@@ -58,36 +58,8 @@
     <!-- Rodapé -->
     <footer>
         <hr>
-        <p>&copy; <span id="ano"></span> - Eduardo Vinicio de Oliveira </p>
+        <p>&copy; 2026 - Eduardo Vinicio de Oliveira</p>
     </footer>
-    
-    <script>
-        document.getElementById("ano").textContent = new Date().getFullYear();
-    </script>
-
-    <script>
-        document.getElementById("meuFormulario").addEventListener("submit", function(event) {
-            event.preventDefault();
-    
-            let nome = document.getElementById("nome").value;
-            let email = document.getElementById("email").value;
-            let telefone = document.getElementById("telefone").value;
-            let idade = document.getElementById("idade").value;
-            let data = document.getElementById("data").value;
-            let curso = document.getElementById("curso").value;
-            let termos = document.getElementById("termos").checked ? "Sim" : "Não";
-    
-            alert(
-                "Nome: " + nome + "\n" +
-                "Email: " + email + "\n" +
-                "Telefone: " + telefone + "\n" +
-                "Idade: " + idade + "\n" +
-                "Data de nascimento: " + data + "\n" +
-                "Curso: " + curso + "\n" +
-                "Aceitou termos: " + termos
-            );
-        });
-    </script>
 
 </body>
 </html>
