@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Cadastro</title>
+
+    <link rel = "stylesheet" href = "./index.css">
 </head>
 <body>
 
@@ -24,22 +26,22 @@
 
         <form id="meuFormulario">
     
-            <label>Nome completo:</label><br>
+            <label class="label_nome">Nome completo:</label><br>
             <input type="text" id="nome" placeholder="Digite seu nome" required><br><br>
         
-            <label>E-mail:</label><br>
+            <label class="label_email">E-mail:</label><br>
             <input type="email" id="email" placeholder="Digite seu e-mail" required><br><br>
         
-            <label>Telefone:</label><br>
+            <label class="label_telefone">Telefone:</label><br>
             <input type="tel" id="telefone" placeholder="Digite seu telefone" required><br><br>
         
-            <label>Idade:</label><br>
+            <label class="label_idade">Idade:</label><br>
             <input type="number" id="idade" placeholder="Digite sua idade" required><br><br>
         
-            <label>Data de nascimento:</label><br>
+            <label class="label_data">Data de nascimento:</label><br>
             <input type="date" id="data" required><br><br>
         
-            <label>Escolha um curso:</label><br>
+            <label class="label_curso">Escolha um curso:</label><br>
             <select id="curso" required>
                 <option value="">Selecione</option>
                 <option value="Informática">Informática</option>
@@ -47,7 +49,7 @@
                 <option value="Enfermagem">Enfermagem</option>
             </select><br><br>
         
-            <label>Aceito os termos:</label>
+            <label class="label_termos">Aceito os termos:</label>
             <input type="checkbox" id="termos" required><br><br>
         
             <button type="submit">Enviar</button>
@@ -58,7 +60,7 @@
     <!-- Rodapé -->
     <footer>
         <hr>
-        <p>&copy; 2026 - Eduardo Vinicio de Oliveira</p>
+        <p id="p_footer">&copy; 2026 - Eduardo Vinicio de Oliveira</p>
     </footer>
 
 </body>
